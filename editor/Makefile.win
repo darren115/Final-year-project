@@ -1,0 +1,60 @@
+# Project: Project1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = src/main.o src/engine.o src/display.o src/cursor.o src/sprite.o src/spriteBase.o src/SFont.o src/Font.o src/message.o src/Menu.o src/MenuItem.o $(RES)
+LINKOBJ  = src/main.o src/engine.o src/display.o src/cursor.o src/sprite.o src/spriteBase.o src/SFont.o src/Font.o src/message.o src/Menu.o src/MenuItem.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -lmingw32 -lSDLmain -lSDL -lSDL_image -lSDL_ttf -mwindows  -s 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = editor.exe
+CXXFLAGS = $(CXXINCS)   -fexpensive-optimizations -O3
+CFLAGS = $(INCS)   -fexpensive-optimizations -O3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before editor.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "editor.exe" $(LIBS)
+
+src/main.o: src/main.cpp
+	$(CPP) -c src/main.cpp -o src/main.o $(CXXFLAGS)
+
+src/engine.o: src/engine.cpp
+	$(CPP) -c src/engine.cpp -o src/engine.o $(CXXFLAGS)
+
+src/display.o: src/display.cpp
+	$(CPP) -c src/display.cpp -o src/display.o $(CXXFLAGS)
+
+src/cursor.o: src/cursor.cpp
+	$(CPP) -c src/cursor.cpp -o src/cursor.o $(CXXFLAGS)
+
+src/sprite.o: src/sprite.cpp
+	$(CPP) -c src/sprite.cpp -o src/sprite.o $(CXXFLAGS)
+
+src/spriteBase.o: src/spriteBase.cpp
+	$(CPP) -c src/spriteBase.cpp -o src/spriteBase.o $(CXXFLAGS)
+
+src/SFont.o: src/SFont.c
+	$(CPP) -c src/SFont.c -o src/SFont.o $(CXXFLAGS)
+
+src/Font.o: src/Font.cpp
+	$(CPP) -c src/Font.cpp -o src/Font.o $(CXXFLAGS)
+
+src/message.o: src/message.cpp
+	$(CPP) -c src/message.cpp -o src/message.o $(CXXFLAGS)
+
+src/Menu.o: src/Menu.cpp
+	$(CPP) -c src/Menu.cpp -o src/Menu.o $(CXXFLAGS)
+
+src/MenuItem.o: src/MenuItem.cpp
+	$(CPP) -c src/MenuItem.cpp -o src/MenuItem.o $(CXXFLAGS)

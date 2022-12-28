@@ -1,0 +1,8 @@
+LEFT: data/images/player/arrow_left.png 0 128 0
+RIGHT: data/images/player/arrow_right.png 0 128 0
+UP: data/images/player/arrow_up.png 0 128 0
+DOWN: data/images/player/arrow_down.png 0 128 0
+LEFT1: data/images/player/arrow_left.png 0 128 0
+RIGHT1: data/images/player/arrow_right.png 0 128 0
+UP1: data/images/player/arrow_up.png 0 128 0
+DOWN1: data/images/player/arrow_down.png 0 128 0

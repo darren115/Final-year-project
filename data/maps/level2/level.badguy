@@ -1,0 +1,4 @@
+SPRITE: 0 370 275 25 30 0 3 45 100 data/images/orc/orc2.data
+SPRITE: 0 1000 175 25 30 0 3 45 100 data/images/orc/orc3.data
+SPRITE: 0 1300 -220 25 30 0 3 45 100 data/images/orc/orc.data
+SPRITE: 0 800 800 25 30 0 3 45 100 data/images/orc/orc3.data

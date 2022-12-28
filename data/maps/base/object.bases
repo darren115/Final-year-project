@@ -1,0 +1,11 @@
+BASE: data/maps/base/objects/mushroom.base
+BASE: data/maps/base/objects/moonstone.base
+BASE: data/maps/base/objects/pendant1.base
+BASE: data/maps/base/objects/pendant2.base
+BASE: data/maps/base/objects/pendant3.base
+BASE: data/maps/base/objects/emptybottle.base
+BASE: data/maps/base/objects/bow.base
+BASE: data/maps/base/objects/lantern.base
+BASE: data/maps/base/objects/boomerang.base
+BASE: data/maps/base/objects/heartpiece.base
+BASE: data/maps/base/objects/torch.base
